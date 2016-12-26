@@ -38,5 +38,5 @@ class account_invoice(models.Model):
 class acccount_invoice_line(models.Model):
     _inherit = 'account.invoice.line'
 
-    image_small = fields.Binary('Product Image',
+    image_small = fields.Binary('Imagen del producto',
                                 related='product_id.image_small')

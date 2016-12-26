@@ -39,5 +39,5 @@ class purchase_order(models.Model):
 class purchase_order_line(models.Model):
     _inherit = 'purchase.order.line'
 
-    image_small = fields.Binary('Product Image',
+    image_small = fields.Binary('Imagen del producto',
                                 related='product_id.image_small')
