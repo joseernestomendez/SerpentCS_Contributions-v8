@@ -26,8 +26,7 @@ from openerp import models, fields
 class account_invoice(models.Model):
     _inherit = 'account.invoice'
 
-    print_image = fields.Boolean('Print Image', help="""If ticked, you can see
-                    the product image in report of sale order/quotation""")
+    print_image = fields.Boolean('Print Image', help="""If ticked, you can see the product image in account invoice report""")
     image_sizes = fields.Selection([('image', 'Big sized Image'),
                                     ('image_medium', 'Medium Sized Image'),
                                     ('image_small', 'Small Sized Image')],
